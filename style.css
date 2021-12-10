@@ -1,0 +1,82 @@
+nav a {
+    color:white;
+    padding:20px;
+    text-align:center;
+    float:left;
+    text-decoration:none;
+    font: 14pt "Calibri";
+  }
+  
+ footer a {
+    color:white;
+    padding:15px;
+    text-align:center;
+    float:left;
+    text-decoration:none;
+    font: 14pt "Calibri";
+  }
+  
+nav {
+    background-color:#2b65e6;
+    overflow: hidden;
+}
+
+footer {
+    background-color:#033e3e;
+    overflow: hidden;
+}
+
+nav a:hover {
+    background-color:#1e90ff;
+}
+
+footer a:hover {
+    background-color:#008080;
+};
+
+#body {
+    background-image: url("Img/image.jpg");
+    height: 600px;
+    width: 600px;
+    background-size: 1000px;
+    background-attachment: scroll;
+    background-position: bottom;
+}
+
+h1 {
+    text-align:center;
+    color:white;
+    font: 50pt "Calibri";
+}
+
+header {
+    padding: 40px;
+    background-color: #008b8b91;
+}
+
+#contact_us {
+    background-color: rgba(255, 127, 80, 0.568);
+    padding: 40pt;
+}
+
+#txt {
+    border-radius: 20px;
+    height: 30px;
+    width: 250px;
+    border: 2px solid orangered;
+}
+
+#submit, #reset {
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid orangered;
+    color: white;
+    font: 14pt "Calibri";
+    margin: 20px;
+    background-color: crimson;
+}
+
+h2 {
+    font: 14pt "Calibri";
+}

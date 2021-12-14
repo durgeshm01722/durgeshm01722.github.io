@@ -8,17 +8,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Page Title</title>
         <link rel="stylesheet" href="style.css">
+        <script src="javascript.js">
+        </script>
     </head>
     
     <body>
        <nav>
            <a href="#">Home</a>
-           <a href="#">About Me</a>
-           <a href="#">My Projects</a>
-           <a href="#">Resources</a>
+           <a href="#about_me">About Me</a>
+           <a href="#my_projects">My Projects</a>
+           <a href="Resources.html">Resources</a>
            <a href="#connect">Connect</a>
            <a href="#contact_me" id="contact">Contact Me</a>
        </nav>
+       
+        <div class="header">
+            <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
 
        <div id="home">
            <h1>Hey There!</h1>
@@ -27,11 +35,64 @@
         </div>
 
         <div id="about_me">
+            <div>
+                <p>Hello, Myself Durgesh Mahajan. I am a second year student pursuing IT engineering from
+                     D. Y. Patil College of Engineering, Akurdi, Pune.</p>
+            </div>
+            <p>HTML
+            <div class="bar-container">
+            <div class="skills html">90%</div>
+            </p>
+            </div>
 
+            <p>CSS</p>
+            <div class="bar-container">
+            <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="bar-container">
+            <div class="skills js">65%</div>
+            </div>
+
+            <p>PHP</p>
+            <div class="bar-container">
+            <div class="skills php">60%</div>
+            </div>
+
+            <button class="btn" type="submit" onclick="document.getElementById('link').click()"><i class="fa fa-download"></i> Download</button>
+                <a id="link" href="Img/6.jpg" download="a.png" hidden></a>
         </div>
 
         <div id="my_projects">
-            
+            <div class="card">
+                <img src="Img/7.png" alt="IMG">
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Img/7.png" alt="IMG">
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Img/7.png" alt="IMG">
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Img/7.png" alt="IMG">
+                <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p>Architect & Engineer</p>
+                </div>
+            </div>
         </div>
 
        <div id="contact_me">

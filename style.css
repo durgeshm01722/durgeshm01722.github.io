@@ -5,25 +5,58 @@
     scroll-behavior: smooth;
 }
 
-nav a {
-    color:white;
-    padding:15px;
+#nav a {
+    color: white;
+    padding: 15px;
     text-align:center;
-    float:left;
-    text-decoration:none;
-    font-size: 12pt;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
 }
-nav a:focus {
+#nav{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    width: 100%;
+    top: 0rem;
+    left: 0rem;
+    background-color:#02153f;
+    overflow: hidden;
+}
+@media screen and (min-width: 600px){
+    #nav a {
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        float: left;
+    }
+    #nav #contact{
+        float: right;
+    }
+}
+#nav a:focus {
     color: #fff12f;
     background-color:#1b3469;
 }
+#nav a:hover {
+    background-color:#1e90ff;
+}
+
 #home {
     background-image: url(Img/2.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-width: 2000px;
+    width: 100%;
+    display: block;
     height: 700px;
     opacity: 100%;
+    object-fit: cover;
 }
 #home h1{
     position: absolute;
@@ -68,12 +101,19 @@ nav a:focus {
 
 #about_me {
     background-image: url(Img/4.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 700px;
     opacity: 100%;
     color:#ffffff;
+}
+#intro{
+    width: 50%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-indent: 3rem;
 }
 .bar-container {
     width: 50%;
@@ -109,7 +149,7 @@ nav a:focus {
 #my_projects {
     color:#ffffff;
     background-image: url(Img/5.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 700px;
@@ -154,29 +194,19 @@ img {
     text-align:center;
     float:left;
     text-decoration:none;
-    font: 14pt "Calibri";
+    font-size: 0.8rem;
   }
   
-nav {
-    background-color:#02153f;
-    overflow: hidden;
-}
 
-nav #contact{
-    float: right;
-}
 
 footer {
-    background-color:#033e3e;
+    background-color:#1a033e;
     overflow: hidden;
-}
-
-nav a:hover {
-    background-color:#1e90ff;
+    height: 10rem;
 }
 
 footer a:hover {
-    background-color:#008080;
+    color: #dfec27
 };
 
 /* #body {

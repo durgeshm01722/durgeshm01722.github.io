@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" type="image/x-icon" href="Img/d.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
@@ -8,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Page Title</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <script src="javascript.js">
         </script>
     </head>
@@ -16,6 +18,7 @@
        <div id="nav">
            <a href="#">Home</a>
            <a href="#about_me">About Me</a>
+           <a href="#my_skills">My Skills</a>
            <a href="#my_projects">My Projects</a>
            <a href="Resources.html">Resources</a>
            <a href="#connect">Connect</a>
@@ -35,7 +38,21 @@
         </div>
 
         <div id="about_me">
-            <div id="intro">
+            <div id="college_pics" style="float:right; margin-right: 7rem; margin-top: 4rem;">
+                <center>
+                    <a target="_blank" href="Img/c_1.jpeg">
+                        <img src="Img/c_1.jpeg" alt="college_pic_1" class="c_pic head">
+                    </a><br>
+                    <a target="_blank" href="Img/c_2.jpeg">
+                    <img src="Img/c_2.jpeg" alt="college_pic_2" class="c_pic"></a>
+                    <a target="_blank" href="Img/c_3.jpeg">
+                    <img src="Img/c_3.jpeg" alt="college_pic_3" class="c_pic"></a>
+                    <a target="_blank" href="Img/c_4.jpeg">
+                    <img src="Img/c_4.jpeg" alt="college_pic_4" class="c_pic"></a>
+                </center>
+            </div>
+
+            <div id="intro" style="padding-top: 6rem; ">
                 <p>Hello, Myself Durgesh Mahajan. I am a second-year student pursuing IT engineering
                      from D. Y. Patil College of Engineering, Akurdi, Pune.</p><br>
 
@@ -49,87 +66,154 @@
                 <p>So hey! Now that you know me a little bit, let's connect if you find your and my interests similar.
                      Head towards the bottom of the page to find my social links and connect with me :-) </p>
             </div>
-            <p>HTML
-            <div class="bar-container">
-            <div class="skills html">90%</div>
-            </p>
-            </div>
 
-            <p>CSS</p>
-            <div class="bar-container">
-            <div class="skills css">80%</div>
-            </div>
+            <!-- <button class="btn" type="submit" onclick="document.getElementById('link').click()"><i class="fa fa-download"></i> Download</button>
+                <a id="link" href="Img/6.jpg" download="a.png" hidden></a> -->
+        </div>
 
-            <p>JavaScript</p>
-            <div class="bar-container">
-            <div class="skills js">65%</div>
+        <div id="my_skills">
+            <h1 style="text-align: center; padding-top: 50px; font-size: 3rem;">My Skills</h1>
+            <div id="skill_bars">
+                HTML
+                <div class="bar-container" style="margin-bottom: 10px;">
+                    <div class="skills html"></div>
+                </div>
+                CSS
+                <div class="bar-container" style="margin-bottom: 10px;">
+                    <div class="skills css"></div>
+                </div>
+                Python
+                <div class="bar-container" style="margin-bottom: 10px;">
+                    <div class="skills python"></div>
+                </div>
+                C++
+                <div class="bar-container" style="margin-bottom: 10px;">
+                    <div class="skills cpp"></div>
+                </div>
+                Java
+                <div class="bar-container" style="margin-bottom: 10px;">
+                    <div class="skills java"></div>
+                </div>
+                Javascript
+                <div class="bar-container" style="margin-bottom: 10px;">
+                    <div class="skills js"></div>
+                </div>
             </div>
-
-            <p>PHP</p>
-            <div class="bar-container">
-            <div class="skills php">60%</div>
+            <div id="icon_stack">
+                <img src="Img/Icons/cpp.png" alt="" class="logo">
+                <img src="Img/Icons/java.png" alt="" class="logo">
+                <img src="Img/Icons/python.png" alt="" class="logo">
+                <img src="Img/Icons/git.png" alt="" class="logo">
+                <img src="Img/Icons/github.png" alt="" class="logo">
+                <img src="Img/Icons/ux.png" alt="" class="logo">
+                <img src="Img/Icons/graphic-design.png" alt="" class="logo">
+                <img src="Img/Icons/html.png" alt="" class="logo">
+                <img src="Img/Icons/css3.png" alt="" class="logo">
+                <img src="Img/Icons/xd.png" alt="" class="logo">
             </div>
-
-            <button class="btn" type="submit" onclick="document.getElementById('link').click()"><i class="fa fa-download"></i> Download</button>
-                <a id="link" href="Img/6.jpg" download="a.png" hidden></a>
+            <div id="box">
+                <img src="Img/Icons/open-box.png" alt="" class="logo box" style="padding-top: 290px; padding-left: 130px;">
+            </div>
         </div>
 
         <div id="my_projects">
-            <div class="card">
-                <img src="Img/7.png" alt="IMG">
-                <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p>Architect & Engineer</p>
+            <center>
+                <br>
+                <h1 style="text-align: center; padding-top: 10px; font-size: 3rem;">My Projects</h1><br>
+                <div class="card">
+                    <img src="Img/Projects/1/piano_ss.png" alt="IMG" width="350px">
+                    <div class="container">
+                    <h3><b>Simple Piano v1.0</b></h3><br>
+                    <p>Simple Piano is a Piano Application Developed in Python. It has a very simple interface which can be understood 
+                        by a beginner too. It is also shortcuts operated and the keys are mentioned in the interface for the 
+                        convenience of the user.
+                    </p>
+                    <a href="https://github.com/durgeshm01722/Simple-Piano-v1.0" class="fa fa-github" target="new"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="Img/7.png" alt="IMG">
-                <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p>Architect & Engineer</p>
+                <div class="card">
+                    <img src="Img/7.png" alt="IMG" width="350px">
+                    <div class="container">
+                    <h3><b>TITLE</b></h3><br>
+                    <p>UNDER CONSTRUCTION...
+                    </p>
+                    <a href="#" class="fa fa-github" target="new"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="Img/7.png" alt="IMG">
-                <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p>Architect & Engineer</p>
+                <div class="card">
+                    <img src="Img/7.png" alt="IMG" width="350px">
+                    <div class="container">
+                    <h3><b>TITLE</b></h3><br>
+                    <p>UNDER CONSTRUCTION...
+                    </p>
+                    <a href="#" class="fa fa-github" target="new"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="Img/7.png" alt="IMG">
-                <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p>Architect & Engineer</p>
+                <div class="card">
+                    <img src="Img/7.png" alt="IMG" width="350px">
+                    <div class="container">
+                    <h3><b>TITLE</b></h3><br>
+                    <p>UNDER CONSTRUCTION...
+                    </p>
+                    <a href="#" class="fa fa-github" target="new"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
-            </div>
+                <div class="card">
+                    <img src="Img/7.png" alt="IMG" width="350px">
+                    <div class="container">
+                    <h3><b>TITLE</b></h3><br>
+                    <p>UNDER CONSTRUCTION...
+                    </p>
+                    <a href="#" class="fa fa-github" target="new"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Img/7.png" alt="IMG" width="350px">
+                    <div class="container">
+                    <h3><b>TITLE</b></h3><br>
+                    <p>UNDER CONSTRUCTION...
+                    </p>
+                    <a href="#" class="fa fa-github" target="new"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </center>
         </div>
 
        <div id="contact_me">
         <center>
-             <h2>Contact Me</h2>
-             <form action="">
-                 <p>Name: <input type="text" id="txt" name="full_name" required></p>
-                 Email: <input type="email" id="txt" name="full_name" required><br><br>
-                 Mobile No.: <input type="number" id="txt" name="full_name" required><br><br>
-
-                 <input type="Submit" name="submit" id="submit">
-                 <input type="reset" name="reset" id="reset">
-             </form>
+             <h2>Contact Me</h2><br>
+             <div style="width: 400px">
+                <form action="">
+                    Name: <input type="text" id="txt" name="full_name" required><br>
+                    Email: <input type="email" id="txt" name="full_name" required><br>
+                    Mobile No.: <input type="number" id="txt" name="full_name" required><br>
+                    Message: <textarea id="message" name="message" rows="4" cols="40" required style="float: right;"></textarea><br>
+                    <input type="Submit" name="submit" id="submit">
+                    <input type="reset" name="reset" id="reset">
+                </form>
+            </div>
          </center>
         </div>
 
        <div id="connect">
-           <center>
-                <a href="https://www.facebook.com/durgeshmahajan1722/" class="fa fa-facebook" target="new"></a>
-                <a href="https://www.instagram.com/durgeshm01722/" class="fa fa-instagram" target="new"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="https://www.linkedin.com/in/durgesh-mahajan-99bab0212/" class="fa fa-linkedin" target="new"></a>
-                <a href="https://github.com/durgeshm01722" class="fa fa-github" target="new"></a>
-            </center>
        </div>
        <footer>
-           <p style="color: white;position: fixed; text-align: center; padding-bottom: 10px;">&copy 2020 | Durgesh Mahajan</p>
+           <center>
+            <br>
+            <a href="https://www.facebook.com/durgeshmahajan1722/" class="fa fa-facebook" target="new" style="text-align: center;"></a>
+            <a href="https://www.instagram.com/durgeshm01722/" class="fa fa-instagram" target="new"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="https://www.linkedin.com/in/durgesh-mahajan-99bab0212/" class="fa fa-linkedin" target="new"></a>
+            <a href="https://github.com/durgeshm01722" class="fa fa-github" target="new"></a>
+            <br><br>
+            <p style="color: white;">&copy 2021 | Durgesh Mahajan</p>
+            </center>
        </footer>
     </div>
     </body>

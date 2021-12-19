@@ -51,9 +51,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-width: 2000px;
     width: 100%;
-    display: block;
     height: 700px;
     opacity: 100%;
     object-fit: cover;
@@ -62,23 +60,23 @@
     position: absolute;
     color: #ffffff;
     font-size: 50px;
-    top: 400px;
-    left: 100px;
+    top: 100%;
+    left: 30%;
     float: right;
 }
 #home h5{
     position: absolute;
     color: #ffffff;
     font-size: 20px;
-    top: 460px;
-    left: 105px;
+    top: 112%;
+    left: 31%;
 }
 #home h6{
     position: absolute;
     color: #ffffff;
     font-size: 15px;
-    top: 485px;
-    left: 105px;
+    top: 117%;
+    left: 31%;
 }
 @media screen and (min-width: 600px){
     #home h1{
@@ -281,11 +279,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 3250px;
+    height: 250rem;
     opacity: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 100%;
 }
 .card a{
     padding:12px;
@@ -294,7 +292,7 @@
     font-size: 2rem;
 }
 .card img{
-    height:15rem;
+    width:100%;
     padding-bottom: 25px;
 }
 .card {
@@ -303,10 +301,10 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    width: 80%;
-    height: auto;
-    padding: 10px;
-    padding-bottom: 30px;
+    width: 75%;
+    padding: 4%;
+    margin: 2%;
+    float: none;
 }
 .card:hover {
     background-color: #15316e;
@@ -324,10 +322,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 1300px;
+        height: 90rem;
         opacity: 100%;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 5%;
+        padding-right: 5%;
         width: auto;
     }
     .card a{
@@ -337,8 +335,8 @@
         font-size: 2rem;
     }
     .card img{
-        height:15rem;
         padding-bottom: 25px;
+        width: 100%;
     }
     .card {
         background-color: #0c204b;
@@ -346,10 +344,10 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         border-radius: 5px;
-        width: 25%;
-        height: auto;
+        width: 22%;
         float: left;
-        padding: 55px;
+        padding: 4%;
+        margin: 1%;
     }
     .card:hover {
         background-color: #15316e;
@@ -364,18 +362,17 @@
 }
 
 #contact_me {
-    padding: 20pt;
+    padding: 2%;
     background: radial-gradient(circle, rgba(0,34,138,1) 0%, rgba(0,0,14,1) 100%);
     background-size: 100%;
-    height: 350px;
+    height: 20rem;
 }
 #txt {
     border-radius: 5px;
     height: 30px;
-    width: 250px;
+    width: 15rem;
     border: 0px;
     background-color: #3e86e4;
-    padding-left: 10px;
     margin: 6px;
 }
 #message{
@@ -394,7 +391,7 @@
     width: 100px;
     color: white;
     font-size: 1rem;
-    margin: 20px;
+    margin: 10px;
     background-color: #1e90ff;
 }
 #submit:hover, #reset:hover {

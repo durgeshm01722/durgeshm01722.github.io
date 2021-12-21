@@ -132,8 +132,7 @@
 }
 #intro{
     width: auto;
-    padding-left: 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
     font-size: 1rem;
     text-indent: 3rem;
 }
@@ -215,17 +214,25 @@
     width: 100%;
     height: 1rem;
     border-radius: 10px;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
 }
-.html {width: 80%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-.css {width: 50%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-.python {width: 85%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-.cpp {width: 70%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-.java {width: 60%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-.js {width: 10%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
+.html {width: 80%;}
+.css {width: 50%;}
+.python {width: 85%;}
+.cpp {width: 70%;}
+.java {width: 60%;}
+.js {width: 10%;}
+@keyframes progress-animation {
+    0%{background-position: 100%;}
+    100%{background-position: 0;}
+}
 .logo {
     display: none;
     width: 150px;
 }
+
 @media screen and (min-width: 600px){
     #my_skills{
         height: 700px;
@@ -245,13 +252,20 @@
         width: 100%;
         height: 1rem;
         border-radius: 10px;
+        background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+        background-size: 300% 100%;
+        animation: progress-animation 2s linear infinite;
     }
-    .html {width: 80%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-    .css {width: 50%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-    .python {width: 85%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-    .cpp {width: 70%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-    .java {width: 60%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
-    .js {width: 10%; background: linear-gradient(90deg, rgba(255,114,68,1) 18%, rgba(47,44,255,1) 100%);}
+    .html {width: 80%;}
+    .css {width: 50%;}
+    .python {width: 85%;}
+    .cpp {width: 70%;}
+    .java {width: 60%;}
+    .js {width: 10%;}
+    @keyframes progress-animation {
+        0%{background-position: 100%;}
+        100%{background-position: 0;}
+    }
     #skill_bars{
         float: right;
         position: inherit;
@@ -286,7 +300,6 @@
     opacity: 100%;
     padding-left: 0.8%;
     padding-right: 0.8%;
-    width: 100%;
 }
 .card a{
     padding:12px;
@@ -305,7 +318,7 @@
     transition: 0.3s;
     border-radius: 5px;
     width: 75%;
-    padding: 4%;
+    padding: 2%;
     margin: 2%;
     float: none;
 }
@@ -317,7 +330,7 @@
 }
 .container {
     padding: 1%;
-    height: 12rem;
+    height: 14rem;
 }
 @media screen and (min-width: 600px){
     #my_projects {

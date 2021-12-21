@@ -142,15 +142,15 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 600px;
+        height: 35rem;
         opacity: 100%;
         color:#ffffff;
     }
     #intro{
         width: 40%;
-        padding-left: 8rem;
+        padding-left: 7%;
         padding-top: 2rem;
-        font-size: 1.2rem;
+        font-size: 100%;
         text-indent: 3rem;
     }
 }
@@ -178,6 +178,10 @@
         width: auto;
         height: 6rem;
         border-radius: 5px;
+    }
+    #college_pics{
+        float: right;
+        width: 40%;
     }
     .c_pic:hover{
         box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
@@ -318,9 +322,11 @@
     transition: 0.3s;
     border-radius: 5px;
     width: 75%;
-    padding: 2%;
+    padding: 4%;
     margin: 2%;
+    margin-top: 10%;
     float: none;
+    font-size: 95%;
 }
 .card:hover {
     background-color: #15316e;

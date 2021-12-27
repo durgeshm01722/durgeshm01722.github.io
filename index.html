@@ -7,7 +7,8 @@
             @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>My Portfolio</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Durgesh's Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style2.css">
         <script src="javascript.js">
@@ -16,12 +17,14 @@
     
     <body>
        <div id="nav">
-           <a href="#">Home</a>
-           <a href="#about_me">About Me</a>
-           <a href="#my_skills">My Skills</a>
-           <a href="#my_projects">My Projects</a>
-           <a href="Resources.html">Resources</a>
-           <a href="#connect" id="conn">Connect</a>
+           <center>
+                <a href="#">Home</a>
+                <a href="#about_me">About Me</a>
+                <a href="#my_skills">My Skills</a>
+                <a href="#my_projects">My Projects</a>
+                <a href="Resources.html">Resources</a>
+                <a href="#connect" id="conn">Connect</a>
+            </center>
        </div>
        
         <div class="header">
@@ -31,47 +34,40 @@
         </div>
 
        <div id="home">
-           <h1>Hey There!</h1>
-           <h5>I am Durgesh</h5>
-           <h6>A second year IT Undergraduate</h6>
+           <h1 class="glow">Hey There!</h1>
+           <h5 class="reveal">I am Durgesh</h5>
+           <h6 class="reveal">A second year IT Undergraduate<br><i class="material-icons" style="font-size: 35px;padding:5px;margin-right: 6px;color: rgb(0, 99, 228);">&#xe320;</i></h6>
         </div>
 
         <div id="about_me">
-            <div id="college_pics" style="float:right; margin-right: 7rem; margin-top: 4rem;">
-                <center>
-                    <a target="_blank" href="Img/c_1.jpeg">
-                        <img src="Img/c_1.jpeg" alt="college_pic_1" class="c_pic head"></a><br>
-                    <a target="_blank" href="Img/c_2.jpeg">
-                        <img src="Img/c_2.jpeg" alt="college_pic_2" class="c_pic"></a>
-                    <a target="_blank" href="Img/c_3.jpeg">
-                        <img src="Img/c_3.jpeg" alt="college_pic_3" class="c_pic"></a>
-                    <a target="_blank" href="Img/c_4.jpeg">
-                        <img src="Img/c_4.jpeg" alt="college_pic_4" class="c_pic"></a>
-                </center>
-            </div>
+            <center>
+                <div id="image"  class="reveal">
+                    <img src="Img/7.jpg" alt="" id="img">
+                </div>
+                <div id="intro" style="padding-top: 6rem; "  class="reveal">
+                    <p>Hello, Myself Durgesh Mahajan. I am a second-year student pursuing IT engineering
+                        from D. Y. Patil College of Engineering, Akurdi, Pune.</p><br>
 
-            <div id="intro" style="padding-top: 6rem; ">
-                <p>Hello, Myself Durgesh Mahajan. I am a second-year student pursuing IT engineering
-                     from D. Y. Patil College of Engineering, Akurdi, Pune.</p><br>
+                    <p>I am a Cyber Security Enthusiast. But, Software Development and UI/UX Designing also
+                        fascinate me! I love to play with programming and dive deep into its concepts. 
+                        I love Graphic Designing too... It's one of the most creative fields.</p><br>
+            
+                    <p>Apart from my Professional Life, I love Sketching and Listening to Music. I am a HUGE HUGE HUGE fan of Arijit❤️❤️❤️
+                                I just love listening to his soulful voice and I never get bored with his songs💙</p><br>
+            
+                    <p>So hey! Now that you know me a little bit, let's connect if you find your and my interests similar.
+                        Head towards the bottom of the page to find my social links and connect with me :-) </p>
+                </div>
+            </center>
 
-                <p>I am a Cyber Security Enthusiast. But, Software Development and UI/UX Designing also
-                     fascinate me! I love to play with programming and dive deep into its concepts. 
-                     I love Graphic Designing too... It's one of the most creative fields.</p><br>
-        
-                <p>Apart from my Professional Life, I love Sketching and Listening to Music. I am a HUGE HUGE HUGE fan of Arijit❤️❤️❤️
-                            I just love listening to his soulful voice and I never get bored with his songs💙</p><br>
-        
-                <p>So hey! Now that you know me a little bit, let's connect if you find your and my interests similar.
-                     Head towards the bottom of the page to find my social links and connect with me :-) </p>
-            </div>
 
             <!-- <button class="btn" type="submit" onclick="document.getElementById('link').click()"><i class="fa fa-download"></i> Download</button>
                 <a id="link" href="Img/6.jpg" download="a.png" hidden></a> -->
         </div>
 
         <div id="my_skills">
-            <h1 style="text-align: center; padding-top: 50px; font-size: 3rem;">My Skills</h1>
-            <div id="skill_bars">
+            <h1 style="text-align: center; padding-top: 50px; font-size: 3rem;"  class="reveal">My Skills</h1>
+            <div id="skill_bars"  class="reveal">
                 HTML
                 <div class="bar-container" style="margin-bottom: 10px;">
                     <div class="skills html"></div>
@@ -97,7 +93,7 @@
                     <div class="skills js"></div>
                 </div>
             </div>
-            <div id="icon_stack">
+            <div id="icon_stack"  class="reveal">
                 <img src="Img/Icons/cpp.png" alt="" class="logo">
                 <img src="Img/Icons/java.png" alt="" class="logo">
                 <img src="Img/Icons/python.png" alt="" class="logo">
@@ -117,9 +113,9 @@
         <div id="my_projects">
             <center>
                 <br>
-                <h1 style="text-align: center; padding-top: 10px; font-size: 3rem;">My Projects</h1><br>
-                <div class="card">
-                    <img src="Img/Projects/1/piano_ss.png" alt="IMG" width="350px">
+                <h1 style="text-align: center; padding-top: 10px; font-size: 3rem;"  class="reveal">My Projects</h1><br><br>
+                <div class="card c1 reveal">
+                    <img src="Img/Projects/1/piano_ss.png" alt="IMG" width="100%">
                     <div class="container">
                     <h3><b>Simple Piano v1.0</b></h3><br>
                     <p>Simple Piano is a Piano Application Developed in Python. It has a very simple interface which can be understood 
@@ -130,8 +126,17 @@
                     <a href="#" class="fa fa-youtube"></a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Img/7.png" alt="IMG" width="350px">
+                <div class="card c2 reveal">
+                    <img src="Img/Projects/2/danger.ico" alt="IMG" width="45%">
+                    <div class="container">
+                    <h3><b>Keylogger</b></h3><br>
+                    <p>This is a Keylogger application built using C++. It tracks the input from the Keyboard and Mouse of the victim's computer and stores all the captured data into a file. It works by hiding itself during execution. Keyloggers are malicious programs that hackers use to steal the sensitive data and credentials of their target victims. I have built it just for experimental purposes and not to harm anyone.
+                    </p>
+                    <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+                <div class="card c3 reveal">
+                    <img src="Img/7.png" alt="IMG" width="100%">
                     <div class="container">
                     <h3><b>TITLE</b></h3><br>
                     <p>UNDER CONSTRUCTION...
@@ -140,8 +145,8 @@
                     <a href="#" class="fa fa-youtube"></a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Img/7.png" alt="IMG" width="350px">
+                <div class="card c4 reveal">
+                    <img src="Img/7.png" alt="IMG" width="100%">
                     <div class="container">
                     <h3><b>TITLE</b></h3><br>
                     <p>UNDER CONSTRUCTION...
@@ -150,8 +155,8 @@
                     <a href="#" class="fa fa-youtube"></a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Img/7.png" alt="IMG" width="350px">
+                <div class="card c5 reveal">
+                    <img src="Img/7.png" alt="IMG" width="100%">
                     <div class="container">
                     <h3><b>TITLE</b></h3><br>
                     <p>UNDER CONSTRUCTION...
@@ -160,18 +165,8 @@
                     <a href="#" class="fa fa-youtube"></a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Img/7.png" alt="IMG" width="350px">
-                    <div class="container">
-                    <h3><b>TITLE</b></h3><br>
-                    <p>UNDER CONSTRUCTION...
-                    </p>
-                    <a href="#" class="fa fa-github" target="new"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="Img/7.png" alt="IMG" width="350px">
+                <div class="card c6 reveal">
+                    <img src="Img/7.png" alt="IMG" width="100%">
                     <div class="container">
                     <h3><b>TITLE</b></h3><br>
                     <p>UNDER CONSTRUCTION...
@@ -193,7 +188,8 @@
                     <a href="https://www.linkedin.com/in/durgesh-mahajan-99bab0212/" class="fa fa-linkedin" target="new"></a>
                     <a href="https://github.com/durgeshm01722" class="fa fa-github" target="new"></a>
                     <br><br>
-                    <p style="color: white;">&copy 2021 | Durgesh Mahajan</p>
+                    <i class="material-icons" style="font-size: 18px;padding:5px;margin-right: 6px;">&#xe0be;</i><h7 style="color: white; margin:px;">durgeshmahajan1722@gmail.com</h7>
+                    <p style="color: white; margin:7px;">&copy 2021 | Durgesh Mahajan</p>
                 </center>
             </footer>
         </div>

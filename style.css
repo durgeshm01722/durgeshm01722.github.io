@@ -293,20 +293,20 @@ footer a{
     }
 
     #about_me{
-        height: 35rem;
+        height: 40rem;
         opacity: 100%;
     }
     #intro{
-        width: 40%;
+        width: 35%;
         padding-left: 7%;
         padding-top: 2rem;
-        font-size: 110%;
+        font-size: 1.1rem;
         float: left;
     }
     #img{
         float:right;
-        top: 8rem;
-        right: 15rem;
+        top: 5rem;
+        right: 15%;
     }
 
     #my_skills{

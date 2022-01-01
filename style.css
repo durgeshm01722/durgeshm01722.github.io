@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     color: white;
 }
+body {
+    overflow: overlay;
+}
 .glow{
     text-shadow: 0 0 50px rgb(15, 78, 250),
                0 0 50px rgb(22, 104, 255), 
@@ -20,38 +23,50 @@
     transform: translateY(0);
     opacity: 1;
 }
-#nav a {
-    padding: 15px;
+::-webkit-scrollbar {
+    width: 5px;
+}  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}   
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(245, 242, 83)
+}
+
+.nav{
+    overflow: hidden;
     text-align:center;
+    list-style:none;
+    background: rgb(25, 25, 26);
+    width: 100%;
+    height: auto;
+    z-index:99;
+}
+.nav li{
+    display:block;
+    opacity: 100%;
+}
+.nav a{
     text-decoration: none;
     font-size: 1rem;
     display: block;
-    text-align: center;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-#nav{
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    width: 100%;
-    top: 0rem;
-    left: 0rem;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(6,1,96,1) 51%, rgba(0,0,0,1) 100%);
-    overflow: hidden;
-}
-#nav a:focus {
-    color: #fff12f;
-    background-color:#1b3469;
-}
-#nav a:hover {
-    background-color: #00025a;
+.nav a:hover {
+    color:rgb(245, 242, 83);
 }
 
 #home {
     background-image: url(Img/2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     width: 100%;
     height: 700px;
     opacity: 100%;
@@ -269,12 +284,17 @@ footer a{
 /* Media Queries ==>> */
 
 @media screen and (min-width: 600px){
-    #nav a {
-        float: left;
-        display: block;
+    .nav{
+        opacity: 80%;
+        position: fixed;
+        width: 100%;
+        height: 50px;
     }
-    #nav #conn{
-        float: right;
+    .nav li{
+        display:inline;
+    }
+    .nav a{
+        display:inline-block;
     }
     #home h1{
         font-size: 80px;

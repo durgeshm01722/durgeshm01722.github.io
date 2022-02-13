@@ -235,51 +235,6 @@
                 }
             }
         </script>
-
-        <!-- <script type="module">
-            function save(){
-                var NAme = document.getElementById("name").value;
-                var EMail = document.getElementById("email").value;
-                var MEssage = document.getElementById("message").value;
-                sessionStorage.setItem("ss_name", NAme);
-                sessionStorage.setItem("ss_email", EMail);
-                sessionStorage.setItem("ss_message", MEssage);
-            }
-            document.getElementById("submit").addEventListener("click", save);
-
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
-            const firebaseConfig = {
-                apiKey: "AIzaSyBxlxhKzX5LIGP-ik8dogFob8a4KyLrJkM",
-                authDomain: "firstproject-5ef0d.firebaseapp.com",
-                databaseURL: "https://firstproject-5ef0d-default-rtdb.firebaseio.com",
-                projectId: "firstproject-5ef0d",
-                storageBucket: "firstproject-5ef0d.appspot.com",
-                messagingSenderId: "514359491989",
-                appId: "1:514359491989:web:dc6f86dc5117ce29684a9c"
-            };
-            const app = initializeApp(firebaseConfig);
-            import{
-                getFirestore, doc, getDoc, setDoc, collection, addDoc, updateDoc, deleteDoc, deleteField
-            }
-            from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
-            const db = getFirestore();
-
-            async function get_data(){
-                var ref = doc(db, "Messages", sessionStorage.getItem("ss_email"));
-                await setDoc(ref, {
-                Name: sessionStorage.getItem("ss_name"),
-                Email: sessionStorage.getItem("ss_email"),
-                Message: sessionStorage.getItem("ss_message")
-                })
-                .then(()=>{
-                    alert("Message sent successfully!!");
-                })
-                .catch((error)=>{
-                    alert("Error: " + error);
-                })
-            }
-            document.getElementById("submit").addEventListener("click", get_data);
-        </script> -->
     </body>
 </html>
 <!-- <a href="#" class="fa fa-youtube"></a> -->

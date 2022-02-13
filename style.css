@@ -26,7 +26,7 @@ h1 {
 }
 #about_me_btn{
     position: absolute;
-    top: 800px;
+    top: 98%;
     left: 45px;
     border: none;
     border-radius: 100px;
@@ -44,7 +44,7 @@ h1 {
 #link_contact_me{
     position: absolute;
     text-decoration: none;
-    top: 860px;
+    top: 105%;
     left: 60px;
     color: #1267d6;
     font-weight: 900;
@@ -148,24 +148,24 @@ h1 {
 #home h5{
     position: absolute;
     font-size: 25px;
-    top: 88%;
+    top: 89%;
     left: 10%;
 }
 #home h6{
     position: absolute;
-    font-size: 16px;
-    top: 92%;
+    font-size: 14px;
+    top: 94%;
     left: 10%;
 }
 
 #about_me {
     background-color: #010024;
-    height: 40rem;
+    height: 42rem;
 }
 #intro{
     margin-top: 3%;
     border-radius: 10px;
-    width: 70%;
+    width: 80%;
     padding: 2rem;
     font-size: 1rem;
     text-indent: 3rem;
@@ -213,20 +213,21 @@ h1 {
     float: left;
 }
 .bar-container {
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     width: 100%;
-    height: 1rem;
+    height: 0.2rem;
     border: 0px solid #b5fde5;
     border-radius: 10px;
+    padding-bottom: 2%;
 }
 .skills {
     text-align: right;
     width: 100%;
-    height: 1rem;
+    height: 0.8rem;
     border-radius: 10px;
     background: #02a2e2;
     background-size: 300% 100%;
-    animation: progress-animation 2s linear infinite;
+    /* animation: progress-animation 2s linear infinite; */
 }
 .html {width: 80%;}
 .css {width: 50%;}
@@ -317,15 +318,17 @@ h1 {
 
 #contact_me {
     background-color: #1b1b5f;
-    height: 30rem;
-    padding-left: 5%;
+    height: 35rem;
     padding-top: 3%;
+}
+#contact{
+    padding-left: 5%;
 }
 .input-box {
     padding-left: 1%;
     position: absolute;
-    left: 25%;
-    width: 65%;
+    left: 30%;
+    width: 60%;
     height: 30px;
     font-size: 15px;
     border-radius: 5px;
@@ -490,6 +493,14 @@ footer a{
         margin-right: 220px;
         margin-top: 100px;
     }
+    .bar-container{
+        height: 1rem;
+        font-size: 0.8rem;
+        padding-bottom: 0%;
+    }
+    .skills{
+        height: 1rem;
+    }
     .logo {
         width: 150px;
         display:inherit;
@@ -549,11 +560,13 @@ footer a{
     }
 
     #contact_me {
-        padding-left: 35%;
         padding-top: 3%;
     }
+    #contact{
+        padding-left: 35%;
+    }
     .input-box {
-        left: 15%;
-        width: 30%;
+        left: 45%;
+        width: 20%;
     }
 }

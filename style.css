@@ -26,7 +26,7 @@ h1 {
 }
 #about_me_btn{
     position: absolute;
-    top: 82%;
+    top: 86%;
     left: 45px;
     border: none;
     border-radius: 100px;
@@ -44,7 +44,7 @@ h1 {
 #link_contact_me{
     position: absolute;
     text-decoration: none;
-    top: 90%;
+    top: 96%;
     left: 60px;
     color: #1267d6;
     font-weight: 900;
@@ -176,20 +176,20 @@ h1 {
     color: white;
     position: absolute;
     font-size: 50px;
-    top: 55%;
+    top: 57%;
     left: 9%;
     float: left;
 }
 #home h5{
     position: absolute;
     font-size: 25px;
-    top: 66%;
+    top: 68%;
     left: 10%;
 }
 #home h6{
     position: absolute;
     font-size: 14px;
-    top: 71%;
+    top: 73%;
     left: 10%;
 }
 

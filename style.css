@@ -26,7 +26,7 @@ h1 {
 }
 #about_me_btn{
     position: absolute;
-    top: 75%;
+    top: 77%;
     left: 45px;
     border: none;
     border-radius: 100px;
@@ -44,7 +44,7 @@ h1 {
 #link_contact_me{
     position: absolute;
     text-decoration: none;
-    top: 81%;
+    top: 83%;
     left: 60px;
     color: #1267d6;
     font-weight: 900;
@@ -275,7 +275,7 @@ h1 {
     0%{background-position: 100%;}
     100%{background-position: 0;}
 } */
-.logo, .logo-box {
+.logo, .box {
     display: none;
 }
 .spinner{
@@ -362,7 +362,7 @@ h1 {
 .input-box {
     padding-left: 1%;
     position: absolute;
-    left: 30%;
+    left: 33%;
     width: 60%;
     height: 30px;
     font-size: 15px;
@@ -385,7 +385,7 @@ h1 {
     cursor: pointer;
     border: none;
     border-radius: 3px;
-    margin: 20px; 
+    margin: 20px;
 }
 #submit {
     color: #33b400;

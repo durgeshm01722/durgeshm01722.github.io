@@ -103,6 +103,10 @@
         width: 100%;
         transition: 0.5s;
     }
+    #icon_stack:hover img:nth-child(11) {
+        transform: translate(440px, -440px);
+        opacity: 1;
+    }
     #icon_stack:hover img:nth-child(10) {
         transform: translate(400px, -400px);
         opacity: 1;
@@ -176,6 +180,10 @@
         transform: translate(60px);
     }
     #icon_stack img:nth-child(9):hover {
+        opacity: 1;
+        transform: translate(60px);
+    }
+    #icon_stack img:nth-child(10):hover {
         opacity: 1;
         transform: translate(60px);
     }

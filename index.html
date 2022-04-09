@@ -21,15 +21,18 @@
         
         <div id="return_top"><a href="#home" class="fa fa-arrow-up"></a></div>
         <center>
-            <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about_me">About Me</a></li>
-                    <li><a href="#my_skills">My Skills</a></li>
-                    <li><a href="#my_projects">My Projects</a></li>
-                    <!-- <li><a href="Resources.html">Resources</a></li> -->
-                    <li><a href="#contact_me">Contact Me</a></li>
-                    <li><a href="#connect">Connect</a></li>
-            </ul>
+            <button class="collapsible">Welcome!</button>
+            <div class="content">
+                <ul class="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about_me">About Me</a></li>
+                        <li><a href="#my_skills">My Skills</a></li>
+                        <li><a href="#my_projects">My Projects</a></li>
+                        <!-- <li><a href="Resources.html">Resources</a></li> -->
+                        <li><a href="#contact_me">Contact Me</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
         </center>
        
         <div class="header">
@@ -42,7 +45,7 @@
            <h1 class="glow">Hey There!</h1>
            <h5>I am Durgesh</h5>
            <!-- <h6>A second year IT Undergraduate<br></h6> -->
-           <h6>Cyber Security ● Software Development ● UI/UX<br></h6>
+           <h6>● Cyber Security<br>● Web Development<br>● UI/UX<br>● Software Development<br></h6>
            <button id="about_me_btn" type="submit" onclick="document.getElementById('link1').click()"><label id="amb_txt"> About Me</label></button><a id="link1" href="#about_me" hidden></a>
         <!-- <i class="material-icons" style="font-size: 35px;padding:5px;margin-right: 6px;color: rgb(0, 99, 228);">&#xe320;</i>-->
             <!-- <img src="Img/kalilinux.svg" class="mini-icon"> -->
@@ -56,11 +59,12 @@
                     <p>Hello, Myself Durgesh Mahajan. I am a second-year student pursuing IT engineering
                         from D. Y. Patil College of Engineering, Akurdi, Pune.</p><br>
 
-                    <p>I am a Cyber Security Enthusiast. But, Software Development and UI/UX Designing also
+                    <p>I am a Cyber Security Enthusiast. But, Web Development and UI/UX Designing also
                         fascinate me! I love to play with programming and dive deep into its concepts. 
                         I love Graphic Designing too... It's one of the most creative fields.</p><br>
             
-                    <p>Apart from my Professional Life, I love Sketching and Listening to Music. I am a HUGE HUGE HUGE fan of Arijit ❤️❤️❤️
+                    <p>Apart from my Professional Life, I love Sketching and Listening to Music. I also love to click 
+                        Pics, especially of Nature. I am a HUGE HUGE HUGE fan of Arijit ❤️❤️❤️
                                 I just love listening to his soulful voice and I never get bored with his songs 💙</p><br>
                 </div>
             </center>
@@ -109,14 +113,15 @@
                 <img src="Img/Icons/java.png" alt="Java" class="logo">
                 <img src="Img/Icons/python.png" alt="Python" class="logo">
                 <img src="Img/Icons/git.png" alt="Git" class="logo">
-                <img src="Img/Icons/ubuntu.png" alt="Ubuntu" class="logo">  
+                <img src="Img/Icons/figma2.png" alt="Ubuntu" class="logo">  
                 <img src="Img/Icons/html.png" alt="HTML" class="logo">
                 <img src="Img/Icons/css3.png" alt="CSS" class="logo">
                 <img src="Img/Icons/js.png" alt="Javascript" class="logo">
+                <img src="Img/Icons/react.png" alt="C++" class="logo">
                 <img src="Img/Icons/xd.png" alt="Adobe XD" class="logo">
             </div>
             <div id="box">
-                <img src="Img/Icons/open-box.png" alt="" class="logo box" style="padding-top: 290px; padding-left: 130px;">
+                <img src="Img/Icons/open-box.png" alt="" class="box" style="padding-top: 290px; padding-left: 130px;">
             </div>
         </div>
 
@@ -221,6 +226,20 @@
             </footer>
         </div>
         <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
             window.onscroll = function() {myFunction2()};
 
             function myFunction2() {

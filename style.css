@@ -26,7 +26,7 @@ h1 {
 }
 #about_me_btn{
     position: absolute;
-    top: 98%;
+    top: 75%;
     left: 45px;
     border: none;
     border-radius: 100px;
@@ -44,7 +44,7 @@ h1 {
 #link_contact_me{
     position: absolute;
     text-decoration: none;
-    top: 105%;
+    top: 81%;
     left: 60px;
     color: #1267d6;
     font-weight: 900;
@@ -98,11 +98,46 @@ h1 {
     width: 100%;
     height: 3px;
     background: #152468;
+    position: sticky;
 }
 .progress-bar {
     height: 3px;
     background: #eef12e;
     width: 0%;
+    position: sticky;
+}
+.collapsible {
+    background: rgb(3, 3, 53);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+.collapsible.active, .collapsible:hover {
+    background: rgb(12, 12, 77);
+}
+
+.collapsible:after {
+    content: '≡';
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: "×";
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
 }
 .nav{
     overflow: hidden;
@@ -141,20 +176,20 @@ h1 {
     color: white;
     position: absolute;
     font-size: 50px;
-    top: 80%;
+    top: 50%;
     left: 9%;
     float: left;
 }
 #home h5{
     position: absolute;
     font-size: 25px;
-    top: 89%;
+    top: 59%;
     left: 10%;
 }
 #home h6{
     position: absolute;
     font-size: 14px;
-    top: 94%;
+    top: 64%;
     left: 10%;
 }
 
@@ -240,7 +275,7 @@ h1 {
     0%{background-position: 100%;}
     100%{background-position: 0;}
 } */
-.logo {
+.logo, .logo-box {
     display: none;
 }
 .spinner{
@@ -436,12 +471,15 @@ footer a{
     }
     #about_me_btn{
         position: absolute;
-        top: 500px;
+        top: 80%;
         left: 100px;
     }
     #link_contact_me{
-        top: 555px;
+        top: 87%;
         left: 120px;
+    }
+    .collapsible {
+        display: none;
     }
     .nav{
         opacity: 80%;
@@ -469,7 +507,7 @@ footer a{
         
     }
     #home h6{
-        font-size: 20px;
+        font-size: 18px;
         top: 460px;
         left: 105px;
     }
@@ -501,7 +539,7 @@ footer a{
     .skills{
         height: 1rem;
     }
-    .logo {
+    .box {
         width: 150px;
         display:inherit;
     }

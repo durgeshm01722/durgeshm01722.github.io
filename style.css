@@ -561,14 +561,14 @@ footer a{
     }
     #sp1{
         left: 6.5%;
-        top: 1700px;
+        top: 1750px;
         width: 200px;
         height: 200px;
         animation: spin 8s linear infinite;
     }
     #sp2{
         left: 5.2%;
-        top: 1682px;
+        top: 1730px;
         width: 240px;
         height: 240px;
         animation: a-spin 8s linear infinite;

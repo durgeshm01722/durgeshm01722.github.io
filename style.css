@@ -24,20 +24,20 @@ h1 {
     padding: 12px;
     visibility: hidden;
 }
-#about_me_btn{
+#download_resume_btn{
     position: absolute;
-    top: 86%;
-    left: 45px;
+    top: 88%;
+    left: 43px;
     border: none;
     border-radius: 100px;
     background-color: #0b5ac2;
     height: 45px;
-    width: 120px;
+    width: 200px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 15px;
 }
-#about_me_btn:hover{
+#download_resume_btn:hover{
     border: 2px solid #0b5ac2;
     background-color: #001838;
 }
@@ -45,7 +45,7 @@ h1 {
     position: absolute;
     text-decoration: none;
     top: 96%;
-    left: 60px;
+    left: 58px;
     color: #1267d6;
     font-weight: 900;
 }
@@ -469,13 +469,13 @@ footer a{
     #return_top{
         left: 95%;
     }
-    #about_me_btn{
+    #download_resume_btn{
         position: absolute;
         top: 80%;
         left: 100px;
     }
     #link_contact_me{
-        top: 87%;
+        top: 88%;
         left: 120px;
     }
     .collapsible {

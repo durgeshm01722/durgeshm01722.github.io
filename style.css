@@ -25,6 +25,7 @@ h1 {
     visibility: hidden;
 }
 #download_resume_btn{
+    cursor: pointer;
     position: absolute;
     top: 88%;
     left: 43px;

@@ -11,6 +11,12 @@ body {
 h1 {
     color:rgb(113, 169, 252)
 }
+
+/*
+-webkit-mask-image: -webkit-gradient(linear, left top, 
+    left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+
+*/
 #return_top{
     position: fixed;
     z-index:99;

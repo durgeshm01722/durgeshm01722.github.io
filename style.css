@@ -320,7 +320,7 @@ h1 {
 
 #my_projects {
     background-color: #01002e;
-    height: 130rem;
+    height: 190rem;
     padding-left: 0.8%;
     padding-right: 0.8%;
     padding-top: 3%;
@@ -587,6 +587,9 @@ footer a{
         padding-right: 5%;
         width: auto;
     }
+    #sec1{
+        height: 450px;
+    }
     .card a{
         padding:1rem;
         font-size: 1.8rem;
@@ -597,7 +600,7 @@ footer a{
         padding: 2%;
         margin: 0.5%;
         font-size: 80%;
-        height: 60%;
+        height: auto;
     }
     .container {
         padding: 2px;
